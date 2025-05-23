@@ -7,7 +7,7 @@ class tokenizer:
 
     def clean_and_tokenize(self):
         lower_text = self.original_text.lower()
-        self.cleaned_text = re.sub(r'\b\w+\b', lower_text)
+        self.cleaned_text = re.findall(r'\b\w+\b', lower_text)
         return  self.cleaned_text
 
     def get_token(self):
