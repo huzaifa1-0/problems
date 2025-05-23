@@ -1,5 +1,8 @@
 import random
 
+from h5py.h5i import DATASET
+
+
 class dataset:
     def __init__(self,data):
         if not all(isinstance(x,(int,float)) for x in data):
@@ -30,4 +33,18 @@ class dataset:
         return variance**0.5
 
     def add_noise(self,magnitude):
-        self.data =
+        self.data = [x + random.uniform(-magnitude, magnitude) for x in self.data]
+
+    def __str__(self):
+        return f"dataset({self.data})"
+
+
+dataset = dataset([3,5,7,8,9,0])
+
+print('mean:', dataset.mean())
+print('median', dataset.median())
+print('standard Deviation:', dataset.standard_deviation())
+
+dataset.add_noise(0.5)
+print('noisy data:', dataset)
+
