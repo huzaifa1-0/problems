@@ -15,4 +15,8 @@ class tokenizer:
             return self.clean_and_tokenize()
         return self.cleaned_text
 
-
+if __name__ == "__main__":
+    text = "my name is Huzaifa Rashid"
+    tokenizer = tokenizer(text)
+    token = tokenizer.get_token()
+    print(token)
