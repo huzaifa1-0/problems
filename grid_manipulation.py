@@ -34,3 +34,7 @@ inputmatrix = [
 image = imagematrix(inputmatrix)
 print(inputmatrix)
 print(image.getmatirx())
+
+
+image.rotateclockwise()
+print(image.getmatirx())
