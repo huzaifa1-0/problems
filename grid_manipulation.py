@@ -21,7 +21,7 @@ class imagematrix:
                 flip[i][j] = self.matrix[i][n-1-j]
         self.matrix = flip
 
-    def getmatirx(self):
+    def getmatrix(self):
         return self.matrix
 
 
@@ -33,11 +33,13 @@ inputmatrix = [
 
 image = imagematrix(inputmatrix)
 print(inputmatrix)
-print(image.getmatirx())
+print(image.getmatrix())
 
 
 image.rotateclockwise()
-print(image.getmatirx())
+print(image.getmatrix())
 
 image.horizontalflip()
-print(image.getmatirx())
+print("\nAfter horizontal flip:")
+print(image.getmatrix())
+
