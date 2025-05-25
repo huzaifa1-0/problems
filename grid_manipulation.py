@@ -20,3 +20,6 @@ class imagematrix:
             for j in range(n):
                 flip[i][j] = self.matrix[i][n-1-j]
         self.matrix = flip
+
+    def getmatirx(self):
+        return self.matrix
