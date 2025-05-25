@@ -38,3 +38,6 @@ print(image.getmatirx())
 
 image.rotateclockwise()
 print(image.getmatirx())
+
+image.horizontalflip()
+print(image.getmatirx)
