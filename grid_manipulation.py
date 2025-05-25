@@ -23,3 +23,13 @@ class imagematrix:
 
     def getmatirx(self):
         return self.matrix
+
+
+
+inputmatrix = [
+    [8,9,0,1,2,3],
+    [1,5,7,4,3,2]
+]
+
+image = imagematrix(inputmatrix)
+print(inputmatrix)
