@@ -33,3 +33,4 @@ inputmatrix = [
 
 image = imagematrix(inputmatrix)
 print(inputmatrix)
+print(image.getmatirx())
