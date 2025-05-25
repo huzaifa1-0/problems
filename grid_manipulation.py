@@ -40,4 +40,4 @@ image.rotateclockwise()
 print(image.getmatirx())
 
 image.horizontalflip()
-print(image.getmatirx)
+print(image.getmatirx())
