@@ -30,3 +30,9 @@ class dataanalyzer:
         max_temperature = self.getmaxtemperature()
 
         if average_temprature is not None:
+            print(f"Average Temperature: {average_temprature}")
+            print(f"Average Humidity: {average_humidity}")
+            print("\nRow(s) with Maximum Temperature:")
+            print(max_temperature)
+        else:
+            print("No data available to analyze.")
