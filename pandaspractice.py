@@ -18,3 +18,5 @@ class dataanalyzer:
             average_humidity = self.data['humidity'].mean()
             return average_temprature, average_humidity
         return None, None
+
+    def getmaxtemperature(self):
