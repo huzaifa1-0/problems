@@ -24,3 +24,9 @@ class dataanalyzer:
             max_temperature = self.data['temprature'].max()
             return self.data[self.data['temprature'] == max_temperature]
         return pd.DataFrame()
+
+    def summary(self):
+        average_temprature, average_humidity = self.compute_average()
+        max_temperature = self.getmaxtemperature()
+
+        if average_temprature is not None:
