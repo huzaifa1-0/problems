@@ -9,3 +9,8 @@ class dataanalyzer:
         try:
             return pd.read_csv(self.file_path)
         except FileNotFoundError:
+            print('file not found')
+            return pd.dataFrame()
+
+    def computing(self):
+        if not self.data.empty:
