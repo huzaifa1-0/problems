@@ -14,3 +14,7 @@ class dataanalyzer:
 
     def computing(self):
         if not self.data.empty:
+            average_temprature = self.data['temprature'].mean()
+            average_humidity = self.data['humidity'].mean()
+            return average_temprature, average_humidity
+        return None, None
