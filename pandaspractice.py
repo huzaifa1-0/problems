@@ -36,3 +36,8 @@ class dataanalyzer:
             print(max_temperature)
         else:
             print("No data available to analyze.")
+
+
+if __name__ == "__main__":
+    analyzer = dataanalyzer()
+    analyzer.summary()
