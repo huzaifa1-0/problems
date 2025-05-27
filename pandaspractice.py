@@ -10,7 +10,7 @@ class dataanalyzer:
             return pd.read_csv(self.file_path)
         except FileNotFoundError:
             print('file not found')
-            return pd.dataFrame()
+            return pd.DataFrame()
 
     def computing(self):
         if not self.data.empty:
@@ -20,3 +20,7 @@ class dataanalyzer:
         return None, None
 
     def getmaxtemperature(self):
+        if not self.data.empty:
+            max_temperature = self.data['temprature'].max()
+            return self.data[self.data['temprature'] == max_temperature]
+        return pd.DataFrame()
