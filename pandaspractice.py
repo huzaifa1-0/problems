@@ -5,3 +5,7 @@ class dataanalyzer:
         self.file_path = file_path
         self.data = self.load_data()
 
+    def load_data(self):
+        try:
+            return pd.read_csv(self.file_path)
+        except FileNotFoundError:
