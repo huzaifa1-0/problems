@@ -11,3 +11,5 @@ df = pd.DataFrame(data)
 print(df)
 
 left_diagonal = [df.iloc[i,i] for i in range(min(df.shape))]
+
+print(left_diagonal)
