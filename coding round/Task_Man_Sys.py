@@ -12,3 +12,7 @@ task3 = task(3, "write tests")
 task1.next = task2
 task2.next = task3
 
+current = task1
+while current is not None:
+    print(current.title)
+    current = current.next
