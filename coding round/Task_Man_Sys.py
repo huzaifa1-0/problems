@@ -1,3 +1,14 @@
+# You are building a Task Management System.
+
+# Each task:
+# has an id
+# has a title
+# can have a next task (tasks are linked)
+
+# Requirements:
+# Design Task using OOP
+# Store tasks using Linked List
+# Print all tasks in order
 class task:
     def __init__(self, id, title):
         self.id = id
